@@ -27,7 +27,6 @@
     border-radius: 24px;
     color: white;
     width: auto;
-    overflow: hidden;
 }
 
 .jumbotron .title-box h1 {
@@ -66,6 +65,34 @@
     position: relative;
 }
 
+.jumbotron .scroll {
+    position: absolute;
+    left: 32%;
+    bottom: 80px;
+    animation: jumbotron-scroll 2s cubic-bezier(0.35, 0, 0.02, 1) 0s infinite normal forwards;
+}
+
+
+.jumbotron .scroll i {
+    font-size: 32px;
+    color: white;
+}
+
+
+@keyframes jumbotron-scroll {
+    0% {
+        transform: translateY(0px)
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(32px);
+        opacity: 0;
+    }
+}
 
 
 
@@ -81,7 +108,7 @@
     }
 
     .jumbotron .container {
-        bottom: 24px;
+        bottom: 80px;
         top: auto;
         width: calc(100% - 24px);
         min-width: auto;
@@ -104,5 +131,11 @@
     .jumbotron .container .image {
         display: none;
         position: absolute;
+    }
+
+    .jumbotron .scroll {
+        left: 50%;
+        bottom: 40px;
+        transform: translateX(50%)
     }
 }
