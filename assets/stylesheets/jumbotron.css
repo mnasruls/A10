@@ -1,19 +1,141 @@
+.jumbotron {
+    height: calc(100vh - 24px);
+    background: url('../images/jumbotron.png');
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    min-width: 1000px;
+    position: absolute;
+    top: 200px;
+    /* transform: translateY(-50%); */
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.jumbotron .title-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 32px;
+    border-radius: 24px;
+    color: white;
+    width: auto;
+}
+
+.jumbotron .title-box h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.jumbotron .title-box p {
+    margin-bottom: 32px;
+    color: rgb(206, 206, 206)
+}
+
+.jumbotron .btn {
+    background-color: #054268;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    transition: all 100ms ease-out;
+}
+
+.jumbotron .btn:hover {
+    background-color: #013454;
+}
+
+.jumbotron .btn:active {
+    background-color: #002c47;
+}
+
+.jumbotron .image img {
+    width: 400px;
+    margin-left: 20px;
+    top: -160px;
+    position: relative;
+}
+
+.jumbotron .scroll {
+    position: absolute;
+    left: 32%;
+    bottom: 80px;
+    animation: jumbotron-scroll 2s cubic-bezier(0.35, 0, 0.02, 1) 0s infinite normal forwards;
+}
 
 
-// Silahkan tuliskan CSS disini
+.jumbotron .scroll i {
+    font-size: 32px;
+    color: white;
+}
+
+
+@keyframes jumbotron-scroll {
+    0% {
+        transform: translateY(0px)
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(32px);
+        opacity: 0;
+    }
+}
 
 
 
-
-
-
-
-// Adjust Responsitifitas disini
 
 /*-----    Desktop   -----*/
-@media (min-width: 768px) {
-}
+
+@media (min-width: 768px) {}
 
 /*-----    Mobile   -----*/
 @media (max-width: 768px) {
+    .jumbotron {
+        background-position: -222px 0px;
+    }
+
+    .jumbotron .container {
+        bottom: 80px;
+        top: auto;
+        width: calc(100% - 24px);
+        min-width: auto;
+    }
+
+    .jumbotron .container .title-box {
+        flex-grow: 1;
+    }
+
+    .jumbotron .container .title-box h1 {
+        font-size: 20px;
+    }
+
+    .jumbotron .container .title-box p {
+        font-size: 14px;
+    }
+
+
+
+    .jumbotron .container .image {
+        display: none;
+        position: absolute;
+    }
+
+    .jumbotron .scroll {
+        left: 50%;
+        bottom: 40px;
+        transform: translateX(50%)
+    }
 }

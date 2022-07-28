@@ -1,19 +1,188 @@
-
-
 /* Silahkan Tuliskan CSS disini */
-
-
-
-
-
-
-
 
 
 /*-----    Desktop   -----*/
 @media (min-width: 768px) {
+
+    .feature-1 {
+        margin-top: 150px;
+    }
+
+    .feature-rich {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        width: 100%;
+    }
+
+    /* FEATUR RICH 1 & 2 */
+
+    .feature-rich .rich-1 {
+        /* border: solid 2px; */
+    }
+
+    .feature-rich .rich-1 img {
+        width: 400px;
+    }
+
+    .feature-rich .rich-2 {
+        padding: 60px;
+        width: 25%;
+        /* border: solid 2px; */
+    }
+
+    .feature-rich .rich-2 h2 {
+        font-size: 26px;
+    }
+
+    .feature-rich .rich-2 .desk-2 {
+        margin-top: 50px;
+    }
+
+    .feature-1 {
+        margin-left: -100px;
+    }
+
+    /* FEATUR RICH 3 & 4 */
+
+    .feature-rich .rich-3 {
+        padding: 30px;
+        width: 25%;
+        text-align: right;
+    }
+
+    .feature-rich .rich-3 h2 {
+        font-size: 26px;
+    }
+
+    .feature-rich .rich-3 .desk-2 {
+        margin-top: 50px;
+    }
+
+    .feature-rich .rich-4 img {
+        padding: 10px;
+        padding-left: 40px;
+        width: 400px;
+        /* border: solid 2px; */
+    }
+
+    .feature-2 {
+        margin-right: -100px;
+    }
+
+    /* FEATUR RICH 5 & 6 */
+
+    .feature-rich .rich-5 {
+        /* border: solid 2px; */
+    }
+
+    .feature-rich .rich-5 img {
+        padding: 50px;
+        width: 400px;
+    }
+
+    .feature-rich .rich-6 {
+        padding: 60px;
+        width: 25%;
+        /* border: solid 2px; */
+    }
+
+    .feature-rich .rich-6 h2 {
+        font-size: 26px;
+    }
+
+    .feature-rich .rich-6 .desk-2 {
+        margin-top: 50px;
+    }
+
+    .feature-3 {
+        margin-left: -100px;
+    }
+
 }
 
 /*-----    Mobile   -----*/
 @media (max-width: 768px) {
+
+    /* FEATURE RICH 1 & 2 */
+
+    .feature-1 .rich-1 {
+        text-align: center;
+    }
+
+    .feature-1 .rich-2 {
+        padding: 40px;
+    }
+
+    .feature-1 .rich-2 .desk-2 {
+        margin-top: 30px;
+    }
+
+    .feature-1 .rich-2 h2 {
+        font-size: 35px;
+        margin-top: -25px;
+        margin-bottom: 15px;
+    }
+
+    .feature-1 .rich-2 p {
+        text-align: left;
+    }
+
+    /* FEATURE RICH 3 & 4 */
+
+    .feature-2 .rich-3 {
+        position: absolute;
+        padding: 40px;
+    }
+
+    .feature-rich .rich-3 .desk-2 {
+        margin-top: 30px;
+    }
+
+    .feature-2 .rich-3 h2 {
+        font-size: 35px;
+        margin-top: 170px;
+        margin-bottom: 15px;
+    }
+
+    .feature-2 .rich-4 {
+        text-align: center;
+    }
+
+    .feature-2 .rich-4 img {
+        width: 300px;
+    }
+
+    /* FEATURE RICH 5 & 6 */
+
+    .feature-3 {
+        margin-top: 350px;
+    }
+
+    .feature-3 .rich-5 {
+        text-align: center;
+    }
+
+    .feature-3 .rich-5 img {
+        width: 300px;
+    }
+
+    .feature-3 .rich-6 {
+        padding: 40px;
+    }
+
+    .feature-3 .rich-6 .desk-2 {
+        margin-top: 30px;
+    }
+
+    .feature-3 .rich-6 h2 {
+        font-size: 35px;
+        margin-top: -25px;
+        margin-bottom: 15px;
+    }
+
+    .feature-3 .rich-6 p {
+        text-align: left;
+    }
+
 }
