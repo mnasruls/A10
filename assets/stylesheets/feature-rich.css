@@ -3,6 +3,11 @@
 
 /*-----    Desktop   -----*/
 @media (min-width: 768px) {
+
+    .feature-1 {
+        margin-top: 150px;
+    }
+
     .feature-rich {
         display: flex;
         justify-content: center;
