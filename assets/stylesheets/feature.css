@@ -1,8 +1,68 @@
 
 
 /* Silahkan Tuliskan CSS disini */
+.feature {
+    background-color: #fe5086;
+    display: flex;
+    justify-content: center;
+    padding: 32px;
+}
 
 
+
+.feature .feature-item {
+    display: flex;
+    width: 1100px;
+    justify-content: center;
+    align-items: flex-end;
+   
+}
+
+.feature .sub-feature {
+    width: 33%;
+    padding: 33px;
+    color: white;
+    text-align: center;
+}
+
+.feature .sub-feature .s{
+    width: 100%;
+    padding: 0%;
+    color: white;
+    text-align: end;
+    justify-content: center;
+    align-items: center;
+}
+.feature .sub-feature img {
+    width: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feature .sub-feature h1 {
+    font-size: 24px;
+    text-align: center;
+}
+.feature .sub-feature .s h1{
+    font-size: 24px;
+    text-align: end;
+    justify-content: start;
+    padding: 0%;
+    width: 100%;
+}
+
+.feature .sub-feature p {
+    font-size: 12px;
+    text-align: left;
+    padding: 30px;
+    padding-top: 15px;
+}
+
+.feature .sub-feature .t p{
+    font-size: 12px;
+    text-align: right;
+    padding: 0%;
+}
 
 
 
@@ -11,8 +71,12 @@
 
 /*-----    Desktop   -----*/
 @media (min-width: 768px) {
+
 }
 
 /*-----    Mobile   -----*/
 @media (max-width: 768px) {
+    .feature {
+        
+    }
 }
