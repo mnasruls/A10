@@ -170,4 +170,20 @@ footer ul li a:hover {
         margin-right: 16px;
         margin-left: 16px;
     }
+
+    footer .row-primary {
+        flex-direction: column;
+    }
+
+    footer .column-link {
+        padding: 0
+    }
+
+    footer .form-image {
+        height: auto;
+    }
+}
+
+* {
+    outline: 1px solid green;
 }
