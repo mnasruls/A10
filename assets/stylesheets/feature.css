@@ -1,5 +1,3 @@
-
-
 /* Silahkan Tuliskan CSS disini */
 .feature {
     background-color: #fe5086;
@@ -15,7 +13,7 @@
     width: 1100px;
     justify-content: center;
     align-items: flex-end;
-   
+
 }
 
 .feature .sub-feature {
@@ -25,7 +23,7 @@
     text-align: center;
 }
 
-.feature .sub-feature .s{
+.feature .sub-feature .s {
     width: 100%;
     padding: 0%;
     color: white;
@@ -33,6 +31,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .feature .sub-feature img {
     width: 100px;
     text-align: center;
@@ -43,7 +42,8 @@
     font-size: 24px;
     text-align: center;
 }
-.feature .sub-feature .s h1{
+
+.feature .sub-feature .s h1 {
     font-size: 24px;
     text-align: end;
     justify-content: start;
@@ -58,7 +58,7 @@
     padding-top: 15px;
 }
 
-.feature .sub-feature .t p{
+.feature .sub-feature .t p {
     font-size: 12px;
     text-align: right;
     padding: 0%;
@@ -70,13 +70,22 @@
 
 
 /*-----    Desktop   -----*/
-@media (min-width: 768px) {
-
-}
+@media (min-width: 768px) {}
 
 /*-----    Mobile   -----*/
 @media (max-width: 768px) {
     .feature {
-        
+        padding: 0;
+    }
+
+    .feature .feature-item {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature .sub-feature {
+        box-sizing: border-box;
+        width: 100%;
     }
 }
