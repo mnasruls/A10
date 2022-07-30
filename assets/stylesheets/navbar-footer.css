@@ -85,7 +85,14 @@ nav .navbar-right ul li a.active {
     background-color: white;
     color: #054268;
     border-radius: 8px;
-    ;
+}
+
+nav .navbar-mobile {
+    display: none;
+}
+
+nav .navbar-right .navbar-toggle {
+    display: none;
 }
 
 
@@ -171,6 +178,79 @@ footer ul li a:hover {
         margin-left: 16px;
     }
 
+    nav .navbar-left ul {
+        display: none;
+    }
+
+    nav .navbar-left {
+        justify-content: start;
+        padding: 4px;
+    }
+
+    nav .navbar-brand {
+        display: flex;
+        align-items: center;
+    }
+
+    nav .navbar-brand img {
+        width: 80px;
+    }
+
+    nav .navbar-right {
+        position: relative;
+    }
+
+    nav .navbar-right ul {
+        display: none;
+    }
+
+    nav .navbar-right .navbar-toggle {
+        display: block;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        padding: 8px;
+    }
+
+    nav .navbar-mobile.show {
+        display: block;
+    }
+
+    nav .navbar-mobile {
+        display: none;
+        background-color: white;
+        position: absolute;
+        z-index: 100;
+        top: 44px;
+        right: 10px;
+        border-radius: 8px;
+        min-width: 150px;
+    }
+
+    nav .navbar-mobile ul {
+        list-style-type: none;
+        padding: 8px 0;
+    }
+
+    nav .navbar-mobile ul li a {
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+        display: block;
+        padding: 8px 16px;
+        color: rgb(75, 75, 75);
+    }
+
+    nav .navbar-mobile ul li a:hover {
+        background-color: rgb(225, 225, 225);
+    }
+
+    nav .navbar-mobile ul li.divider {
+        height: 1px;
+        background-color: #ddd;
+        margin: 4px;
+    }
+
     footer .row-primary {
         flex-direction: column;
     }
@@ -182,8 +262,4 @@ footer ul li a:hover {
     footer .form-image {
         height: auto;
     }
-}
-
-* {
-    outline: 1px solid green;
 }
