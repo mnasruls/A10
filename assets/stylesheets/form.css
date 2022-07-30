@@ -1,16 +1,14 @@
-
-
 /* Silahkan Tuliskan CSS disini */
 .form-demo {
     background-color: #367EE5;
     display: block;
-    float:left;
+    float: left;
     font-family: 'Poppins', sans-serif;
     color: white;
 }
 
 .form-demo .form-input {
-    float:left;
+    float: left;
 }
 
 .form-demo .form-input h3 {
@@ -22,14 +20,14 @@
     height: 30px;
     font-size: 28px;
     border-radius: 5px;
-    border:1px solid #fff
+    border: 1px solid #fff
 }
 
 .form-demo .form-input .submit {
     border-color: white;
     color: white;
     background-color: #367EE5;
-    border:2px solid #fff
+    border: 2px solid #fff
 }
 
 .form-demo .form-input .submit:hover {
@@ -45,7 +43,7 @@
 }
 
 .form-demo .form-image {
-    float:right;
+    float: right;
     background-color: white;
     text-align-last: center;
 }
@@ -58,7 +56,7 @@
     }
 
     .form-demo .form-input {
-        float:left;
+        float: left;
         width: 40%;
         padding: 25px;
         margin-top: 50px;
@@ -71,7 +69,7 @@
         height: 30px;
         font-size: 28px;
         border-radius: 5px;
-        
+
     }
 
     .form-demo .form-input .submit {
@@ -84,8 +82,7 @@
 
     .form-demo .form-image {
         width: 40%;
-        height: 100%;
-        float:right;
+        float: right;
         padding: 25px;
         margin: 75px 50px 50px 0px;
         background-color: white;
@@ -100,8 +97,9 @@
     }
 
     .form-demo .form-input {
-        float:left;
-        width: 97%;
+        float: left;
+        width: 100%;
+        box-sizing: border-box;
         padding: 15px;
         margin-top: 20px;
         margin-left: 0px;
@@ -131,6 +129,6 @@
     .form-demo .form-image {
         display: none;
     }
-    
+
 
 }
