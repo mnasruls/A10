@@ -84,6 +84,7 @@
 
     .form-demo .form-image {
         width: 40%;
+        height: 100%;
         float:right;
         padding: 25px;
         margin: 75px 50px 50px 0px;
